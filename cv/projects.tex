@@ -2,34 +2,53 @@
 
 \begin{cventries}
   \cventry
-    {Arbitrage trading strategy} % subtitle
+    {} % subtitle
     {Harmony} % project
     {} % empty location
     {} % empty date
     {
       \begin{cvitems} % description
-        \item {A multithreaded program for automating arbitrage trading written in Rust.}
+        \item {A multithreaded program for automating arbitrage trading using the Binance API, written in Rust.}
         \vspace{0.5mm}
-		\item {Utilises the Binance API to make automatic cryptocurrency trades when an arbitrage opportunity is detected.}
+		\item {Ensured safe trade execution and profit calculation using message passing between threads.}
 		\vspace{0.5mm}
 		\item {Received proof of concept funding from York Enterprise.}
 		\vspace{0.5mm}
-		\item {Returns an average profit of 2.8\% per trade.}
+		\item {Deployed on a dedicated bare-metal Debian server with a custom tuned kernel.}
       \end{cvitems}
     }
 
+\begin{comment}
   \cventry
-    {Automated options trading strategy}
+    {}
     {Advantage}
     {}
     {}
     {
       \begin{cvitems}
-        \item {A tool for automating options trading written in Python.}
+        \item {A utility for automating options trading written in Python.}
         \vspace{0.5mm}
-		\item {Options strategy automaton based on economic indicators using the Interactive Brokers API.}
+		\item {Options strategy automaton script that places trades, based on economic indicators, through the Interactive Brokers API.}
 		\vspace{0.5mm}
-		\item {Return on investment of 22\% with a maximum drawdown of 9\%.}
+		\item {Heavily utilises statistical Python libraries, most notably: statsmodels, pandas, and numpy.}
+      \end{cvitems}
+    }
+\end{comment}
+    
+    \cventry
+    {}
+    {SEC data mining}
+    {}
+    {}
+    {
+      \begin{cvitems}
+        \item {A program used to perform queries on and derive trading information from an ontology made up of data from SEC reports, written in Python.}
+        \vspace{0.5mm}
+		\item {Methodology revolves around finding pairs of companies that share links, such as shareholders, prominent employees, or parent company.}
+		\vspace{0.5mm}
+		\item {Created test suites to investigate the hypothesis that companies sharing these links would be better for pairs trading using short-term, long-term and sliding window historical stock data.}
+		\vspace{0.5mm}
+		\item {Leveraged statistical Python libraries for analytics, most notably: statsmodels, pandas, and numpy; utilised SPARQL and rdflib to query the ontology.}
       \end{cvitems}
     }
 \end{cventries}
